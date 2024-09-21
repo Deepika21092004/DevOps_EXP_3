@@ -7,8 +7,7 @@ function get_info() {
     const email = document.getElementById("email").value.trim();
     const phoneNumber = document.getElementById("pno").value.trim();
     const dob = document.getElementById("dob").value;
-    const qualification = document.getElementById("qualification").value;
-    const qualType = document.getElementById("qualitype").value.trim();
+    const quali = document.getElementById("quali").value.trim();
     
     //Radio button validation
     const gender = document.querySelector('input[name="gender"]:checked');
@@ -19,7 +18,7 @@ function get_info() {
 
     // Basic Validation
     if (firstName === "" || lastName === "" || fatherName === "" || motherName === "" || email === "" ||
-        phoneNumber === "" || dob === "" || qualification === "" || qualType === "") {
+        phoneNumber === "" || dob === "" || quali === "") {
         alert("All fields are required.");
         return;
     }
@@ -48,8 +47,7 @@ function get_info() {
         "<br><b>Phone number:</b> " + phoneNumber +
         "<br><b>Date of Birth:</b> " + dob +
         "<br><b>Gender:</b> " + gender.value +
-        "<br><b>Highest Educational Qualification:</b> " + qualification +
-        "<br><b>Type of Qualification:</b> " + qualType
+        "<br><b>Qualification:</b> " + quali
     );
 
     alert("User Registration Successful.");
